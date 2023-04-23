@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,200;0,400;1,300&family=Roboto&family=Roboto+Mono&family=Rubik&display=swap');
+
+
+@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }
+    50%{
+        transform: translateY(-1rem); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }
+    100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    
+}
+
+.fondo{
+    background: #008b6f;
+    background: linear-gradient(90deg,#008b6f7e 0%, #4e46465e 80%), url("../assets/imagen/4.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.borroso{
+    backdrop-filter: blur(5px);/*efecto de esmerilado sobre un div, queda el efecto sobre la imagen de fondo*/
+    height:100%;
+}
+.colorNav{
+    background: #008b6f;
+    background: linear-gradient(90deg,#008b6f7e 0%, #4e46465e 80%)
+}
+.nav-link{
+    font-size: 1.2rem;
+}
+.justificar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;  
+}
+.principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.galeria{
+    width: 100%;
+}
+
+.carousel-item{
+   height: 70vh;
+}
+
+.carousel-item img{
+    height: 100%;
+    object-fit: cover;
+}    
